@@ -1,0 +1,423 @@
+1
+00:00:00,100 --> 00:00:03,440
+Les ponts portent nos villes chaque jour — et quand l'un d'eux cède,
+
+2
+00:00:03,440 --> 00:00:06,010
+le coût se mesure en vies humaines, pas en argent.
+
+3
+00:00:06,010 --> 00:00:09,380
+Alors qu'un nombre croissant d'ouvrages vieillit au-delà de leur âge d'or,
+
+4
+00:00:09,380 --> 00:00:13,350
+la question la plus difficile en matière de sécurité des infrastructures reste étonnamment
+
+5
+00:00:13,350 --> 00:00:17,330
+simple : comment détecter les changements discrets d'une structure avant que les dommages
+
+6
+00:00:17,330 --> 00:00:18,550
+ne deviennent visibles ?
+
+7
+00:00:18,550 --> 00:00:22,300
+La surveillance traditionnelle peine à répondre à cela — des capteurs trop dispersés
+
+8
+00:00:22,300 --> 00:00:26,050
+laissent des zones aveugles, et même lorsque la détection acoustique par fibre optique
+
+9
+00:00:26,050 --> 00:00:29,810
+offre une couverture complète, les données brutes arrivent plus vite qu'aucun ingénieur ne
+
+10
+00:00:29,810 --> 00:00:31,540
+peut les lire à la main.
+
+11
+00:00:31,540 --> 00:00:35,910
+Voici MurSense : un agent d'intelligence artificielle qui permet à quiconque de demander,
+
+12
+00:00:35,910 --> 00:00:39,940
+en langage naturel, comment se porte un pont en ce moment —
+
+13
+00:00:39,940 --> 00:00:43,640
+et d'obtenir une réponse fondée sur une véritable analyse d'ingénierie validée,
+
+14
+00:00:43,640 --> 00:00:44,650
+pas une supposition.
+
+15
+00:00:44,650 --> 00:00:49,120
+En coulisses, un agent IA lit la question et la dirige vers l'une
+
+16
+00:00:49,120 --> 00:00:52,550
+de trois capacités essentielles — analyse vibratoire, diagnostic de santé,
+
+17
+00:00:52,550 --> 00:00:57,020
+ou questions-réponses — puis confie le calcul réel à un moteur d'algorithmes validés
+
+18
+00:00:57,020 --> 00:01:01,490
+et déterministe : analyse PSD, extraction des fréquences modales, alertes à cinq niveaux.
+
+19
+00:01:01,490 --> 00:01:05,930
+Chaque chiffre renvoyé provient de ce moteur, exécuté sur de vraies données de
+
+20
+00:01:05,930 --> 00:01:09,340
+détection par fibre optique DAS — échantillonnage à 100 Hz,
+
+21
+00:01:09,340 --> 00:01:12,070
+1034 canaux — jamais inventé par l'IA elle-même.
+
+22
+00:01:13,000 --> 00:01:14,580
+Connectons-nous.
+
+23
+00:01:14,580 --> 00:01:18,260
+Voici l'espace de travail principal de MurSense : une barre latérale pour l'historique
+
+24
+00:01:18,260 --> 00:01:21,950
+des conversations et les projets enregistrés, une barre supérieure pour la langue et
+
+25
+00:01:21,950 --> 00:01:25,640
+le thème, et un panneau central qui pose toujours la même question au
+
+26
+00:01:25,640 --> 00:01:29,050
+démarrage — que souhaitez-vous savoir sur la santé de ce pont ?
+
+27
+00:01:33,000 --> 00:01:35,780
+Un seul clic bascule toute l'interface en thème sombre —
+
+28
+00:01:35,780 --> 00:01:39,390
+la même mise en page, plus reposante pour les yeux lors d'un poste
+
+29
+00:01:39,390 --> 00:01:39,950
+de nuit.
+
+30
+00:01:40,860 --> 00:01:45,100
+L'interface elle-même est entièrement trilingue — chinois, anglais, français —
+
+31
+00:01:45,100 --> 00:01:48,060
+et le changement est instantané, sans rechargement.
+
+32
+00:01:48,060 --> 00:01:51,190
+Même le nom de l'assistant change selon la langue.
+
+33
+00:01:52,100 --> 00:01:57,990
+En déployant "Plus", on découvre l'ensemble des capacités de MurSense sous forme d'exemples
+
+34
+00:01:57,990 --> 00:02:02,530
+en un clic : analyse vibratoire, diagnostic spectral, questions-réponses documentaires,
+
+35
+00:02:02,530 --> 00:02:03,890
+génération de rapports.
+
+36
+00:02:03,890 --> 00:02:07,890
+Il y a même une cinquième carte pour l'identification de charges —
+
+37
+00:02:07,890 --> 00:02:12,230
+clairement marquée comme une direction prévue, pas une fonctionnalité que nous prétendons proposer
+
+38
+00:02:12,230 --> 00:02:12,730
+aujourd'hui.
+
+39
+00:02:13,470 --> 00:02:17,970
+Le guide d'utilisation montre pas à pas à un nouvel utilisateur comment s'adresser
+
+40
+00:02:17,970 --> 00:02:22,480
+à l'assistant — indiquer une date, dire "analyser", dire "exporter un rapport" —
+
+41
+00:02:22,480 --> 00:02:26,980
+tout en présentant l'échelle réelle des données sous-jacentes : échantillonnage à 100 hertz,
+
+42
+00:02:26,980 --> 00:02:28,370
+1034 canaux, en continu.
+
+43
+00:02:29,270 --> 00:02:33,570
+À tout moment, on peut choisir un fichier de données précis dans ce
+
+44
+00:02:33,570 --> 00:02:36,870
+menu déroulant — MurSense remplit automatiquement la bonne instruction d'analyse.
+
+45
+00:02:37,770 --> 00:02:40,410
+Voici maintenant le cœur du produit.
+
+46
+00:02:40,410 --> 00:02:44,970
+Demandons, en langage naturel, comment se porte le pont aujourd'hui.
+
+47
+00:02:44,970 --> 00:02:49,330
+Observez la ligne de statut — l'assistant redirige cette question vers un véritable
+
+48
+00:02:49,330 --> 00:02:52,340
+outil d'analyse, il ne se contente pas de discuter.
+
+49
+00:02:53,260 --> 00:02:57,520
+Quelques instants plus tard : une évaluation complète de l'état de santé.
+
+50
+00:02:57,520 --> 00:03:01,510
+En haut, l'outil exact qui a été exécuté — check_bridge_health —
+
+51
+00:03:01,510 --> 00:03:05,130
+la preuve que ce résultat provient bien d'un code validé,
+
+52
+00:03:05,130 --> 00:03:06,220
+pas d'une supposition.
+
+53
+00:03:06,220 --> 00:03:10,920
+En dessous, les indicateurs scalaires : déformation et fréquences modales,
+
+54
+00:03:10,920 --> 00:03:12,800
+comparées à la référence.
+
+55
+00:03:12,800 --> 00:03:17,150
+Et voici une nuance qu'un système réel produit, mais pas une maquette :
+
+56
+00:03:17,150 --> 00:03:21,510
+les moyennes globales paraissent parfaitement normales, alors que la répartition spatiale signale une
+
+57
+00:03:21,510 --> 00:03:25,870
+anomalie localisée — une alerte de niveau orange sur un tronçon précis du
+
+58
+00:03:25,870 --> 00:03:27,550
+pont, accompagnée d'une recommandation claire.
+
+59
+00:03:28,450 --> 00:03:33,060
+Demandez le spectre de puissance d'un canal précis, et MurSense le trace en
+
+60
+00:03:33,060 --> 00:03:36,960
+temps réel — voici la courbe fréquentielle réelle du canal 519,
+
+61
+00:03:36,960 --> 00:03:40,500
+avec quatre fréquences modales automatiquement détectées et annotées en hertz.
+
+62
+00:03:46,450 --> 00:03:50,470
+Revenons à la vue d'ensemble : un diagramme en cascade couvrant les 1034
+
+63
+00:03:50,470 --> 00:03:54,490
+canaux, qui montre exactement où chaque fréquence de résonance se poursuit de façon
+
+64
+00:03:54,490 --> 00:03:55,730
+cohérente — ou non.
+
+65
+00:03:59,450 --> 00:04:03,700
+MurSense ne se limite pas au calcul — posez-lui directement une question de
+
+66
+00:04:03,700 --> 00:04:06,960
+fond, par exemple comment interpréter une anomalie sur ce graphique,
+
+67
+00:04:06,960 --> 00:04:11,210
+et il consulte sa propre base de connaissances pour vous guider à travers
+
+68
+00:04:11,210 --> 00:04:12,510
+un véritable raisonnement diagnostique.
+
+69
+00:04:17,450 --> 00:04:21,490
+Chaque réponse porte le même pied de page : quel modèle a répondu,
+
+70
+00:04:21,490 --> 00:04:25,530
+combien de jetons ont été utilisés, combien de temps cela a pris —
+
+71
+00:04:25,530 --> 00:04:28,640
+et trois actions en un clic : copier, exporter, enregistrer.
+
+72
+00:04:29,550 --> 00:04:33,200
+L'export transforme n'importe quelle analyse en un rapport Word mis en forme,
+
+73
+00:04:33,200 --> 00:04:36,250
+en un clic — tableaux, figures, tout y est —
+
+74
+00:04:36,250 --> 00:04:38,690
+prêt à être remis à un gestionnaire d'ouvrage.
+
+75
+00:04:39,590 --> 00:04:44,090
+L'enregistrement archive cette même analyse dans un projet nommé, pour ne rien perdre
+
+76
+00:04:44,090 --> 00:04:45,480
+d'une session à l'autre.
+
+77
+00:04:49,590 --> 00:04:53,070
+Ce rapport enregistré apparaît immédiatement dans les Projets — titre,
+
+78
+00:04:53,070 --> 00:04:57,610
+nombre de mots, nombre de figures, niveau de santé, tout est visible d'un
+
+79
+00:04:57,610 --> 00:04:58,300
+coup d'œil.
+
+80
+00:04:59,220 --> 00:05:02,780
+Ouvrez n'importe quel rapport archivé et vous obtenez un éditeur complet :
+
+81
+00:05:02,780 --> 00:05:06,050
+le texte Markdown à gauche, un aperçu en direct à droite,
+
+82
+00:05:06,050 --> 00:05:09,910
+et un export en un clic vers un fichier HTML autonome que vous
+
+83
+00:05:09,910 --> 00:05:11,400
+pouvez partager avec n'importe qui.
+
+84
+00:05:12,310 --> 00:05:15,400
+L'espace de données est l'endroit où vivent les données brutes :
+
+85
+00:05:15,400 --> 00:05:19,050
+vos propres enregistrements téléversés, avec un aperçu multi-canal en direct que l'on peut
+
+86
+00:05:19,050 --> 00:05:22,700
+inspecter canal par canal — en choisissant des canaux précis à comparer et
+
+87
+00:05:22,700 --> 00:05:25,510
+en ajustant leur espacement pour une vue plus claire —
+
+88
+00:05:25,510 --> 00:05:27,200
+avant même de lancer une analyse.
+
+89
+00:05:27,200 --> 00:05:30,670
+Il y a aussi un jeu de données public partagé,
+
+90
+00:05:30,670 --> 00:05:34,830
+ainsi qu'un niveau partagé au sein d'une organisation, réservé aux comptes entreprise.
+
+91
+00:05:36,310 --> 00:05:41,110
+Cliquez sur analyser depuis n'importe quel fichier ici, et MurSense revient directement au
+
+92
+00:05:41,110 --> 00:05:43,700
+chat avec la bonne instruction déjà remplie.
+
+93
+00:05:44,600 --> 00:05:48,990
+Les pages de compte couvrent l'essentiel : profil, statistiques d'utilisation réelles,
+
+94
+00:05:48,990 --> 00:05:54,180
+une configuration de notifications réservée au déploiement cloud, et la gestion du mot
+
+95
+00:05:54,180 --> 00:05:54,980
+de passe.
+
+96
+00:05:57,600 --> 00:06:01,640
+Les paramètres système permettent de connecter MurSense à votre propre fournisseur de modèle
+
+97
+00:06:01,640 --> 00:06:05,370
+et à votre clé API, de définir une langue de réponse préférée,
+
+98
+00:06:05,370 --> 00:06:09,410
+et de changer la langue de toute l'interface — sans jamais rien redémarrer.
+
+99
+00:06:10,600 --> 00:06:14,040
+Et un canal de retour direct vers le développeur.
+
+100
+00:06:16,600 --> 00:06:19,400
+Une seule règle garantit la fiabilité de tout cela :
+
+101
+00:06:19,400 --> 00:06:23,030
+l'IA n'écrit jamais de code d'analyse à la volée, et n'a jamais un
+
+102
+00:06:23,030 --> 00:06:24,990
+accès direct aux données brutes des ondes.
+
+103
+00:06:24,990 --> 00:06:29,370
+Un ensemble d'algorithmes validés effectue le calcul réel ; le modèle se contente
+
+104
+00:06:29,370 --> 00:06:32,400
+de décider quel outil appeler et d'expliquer le résultat.
+
+105
+00:06:32,400 --> 00:06:37,470
+MurSense : de vrais capteurs, une vraie analyse, et un assistant qui montre
+
+106
+00:06:37,470 --> 00:06:38,250
+son travail.

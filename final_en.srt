@@ -1,0 +1,367 @@
+1
+00:00:00,050 --> 00:00:03,560
+Bridges carry cities every day — and when one fails,
+
+2
+00:00:03,560 --> 00:00:06,370
+the cost is measured in lives, not dollars.
+
+3
+00:00:06,370 --> 00:00:10,100
+As more of the world's bridges age past their prime,
+
+4
+00:00:10,100 --> 00:00:14,960
+the hardest question in infrastructure safety is deceptively simple: how do you catch
+
+5
+00:00:14,960 --> 00:00:18,690
+a structure's quiet, invisible changes before visible damage ever appears?
+
+6
+00:00:18,690 --> 00:00:22,970
+Traditional monitoring struggles with exactly this — sparse sensors leave blind spots,
+
+7
+00:00:22,970 --> 00:00:27,600
+and even where fiber-optic sensing gives full coverage, the raw data floods in
+
+8
+00:00:27,600 --> 00:00:30,810
+faster than any engineer can read it by hand.
+
+9
+00:00:30,810 --> 00:00:34,360
+This is MurSense: an AI agent that lets anyone ask,
+
+10
+00:00:34,360 --> 00:00:38,270
+in plain language, how a bridge is doing right now —
+
+11
+00:00:38,270 --> 00:00:42,180
+and get back an answer grounded in real, validated engineering analysis,
+
+12
+00:00:42,180 --> 00:00:43,250
+not a guess.
+
+13
+00:00:43,250 --> 00:00:48,960
+Under the hood, an AI agent reads the question and routes it to
+
+14
+00:00:48,960 --> 00:00:53,350
+one of three core capabilities — vibration analysis, health diagnosis,
+
+15
+00:00:53,350 --> 00:00:58,620
+or knowledge Q&A — then hands the actual computation to a validated,
+
+16
+00:00:58,620 --> 00:01:03,020
+deterministic algorithm engine: power-spectral-density analysis, modal-frequency extraction, five-level alert scoring.
+
+17
+00:01:03,020 --> 00:01:08,260
+Every number it returns comes from that engine, run on real DAS fiber-optic
+
+18
+00:01:08,260 --> 00:01:13,500
+sensing data — 100 Hz sampling, 1,034 channels — never invented by the
+
+19
+00:01:13,500 --> 00:01:14,300
+AI itself.
+
+20
+00:01:15,180 --> 00:01:16,130
+Let's log in.
+
+21
+00:01:16,130 --> 00:01:20,370
+This is MurSense's main workspace: a sidebar for conversation history and saved projects,
+
+22
+00:01:20,370 --> 00:01:24,620
+a top bar for language and theme, and a center panel that starts
+
+23
+00:01:24,620 --> 00:01:28,860
+every session with one simple question — what would you like to know
+
+24
+00:01:28,860 --> 00:01:29,840
+about bridge health?
+
+25
+00:01:35,180 --> 00:01:38,460
+One click switches the whole interface to a dark theme —
+
+26
+00:01:38,460 --> 00:01:41,440
+same layout, easier on the eyes for a night shift.
+
+27
+00:01:42,340 --> 00:01:47,610
+The interface itself is fully trilingual — Chinese, English, French —
+
+28
+00:01:47,610 --> 00:01:49,530
+switching instantly, no reload.
+
+29
+00:01:49,530 --> 00:01:52,690
+Even the assistant's own name changes with the language.
+
+30
+00:01:53,600 --> 00:02:00,230
+Expand "More" and you'll see MurSense's full capability set laid out as one-click
+
+31
+00:02:00,230 --> 00:02:04,820
+examples: vibration analysis, spectral diagnostics, knowledge Q&A, report generation.
+
+32
+00:02:04,820 --> 00:02:09,070
+There's even a fifth card for load identification — clearly marked as a
+
+33
+00:02:09,070 --> 00:02:11,690
+planned direction, not something we're claiming works today.
+
+34
+00:02:12,590 --> 00:02:17,460
+The user guide walks a first-time visitor through exactly how to talk to
+
+35
+00:02:17,460 --> 00:02:22,320
+the assistant — say a date, say "analyze", say "export a report" —
+
+36
+00:02:22,320 --> 00:02:26,810
+and shows the real scale of the data underneath: 100 hertz sampling,
+
+37
+00:02:26,810 --> 00:02:27,940
+1,034 channels, continuously.
+
+38
+00:02:28,850 --> 00:02:32,950
+At any point you can pick a specific data file from this dropdown
+
+39
+00:02:32,950 --> 00:02:35,780
+— MurSense fills in the right analysis prompt automatically.
+
+40
+00:02:36,850 --> 00:02:38,340
+Now the core of the product.
+
+41
+00:02:38,340 --> 00:02:41,730
+Ask, in plain language, how the bridge is doing today.
+
+42
+00:02:41,730 --> 00:02:45,770
+Watch the status line — the assistant is routing this to a real
+
+43
+00:02:45,770 --> 00:02:47,330
+analysis tool, not just chatting.
+
+44
+00:02:49,850 --> 00:02:52,490
+Moments later: a complete health assessment.
+
+45
+00:02:52,490 --> 00:02:56,240
+At the top, the exact tool that ran — check_bridge_health —
+
+46
+00:02:56,240 --> 00:02:59,990
+so you know this came from validated code, not a guess.
+
+47
+00:02:59,990 --> 00:03:05,740
+Below it, the scalar metrics: strain and modal frequency, both compared against baseline.
+
+48
+00:03:05,740 --> 00:03:10,030
+And here's the nuance a real system produces that a mockup wouldn't:
+
+49
+00:03:10,030 --> 00:03:14,680
+the scalar averages look perfectly normal, but the spatial breakdown flags a localized
+
+50
+00:03:14,680 --> 00:03:18,970
+anomaly — an orange-level warning at a specific stretch of the bridge,
+
+51
+00:03:18,970 --> 00:03:20,760
+with a clear recommendation attached.
+
+52
+00:03:21,850 --> 00:03:26,630
+Ask for the power spectrum on a specific channel, and MurSense draws it
+
+53
+00:03:26,630 --> 00:03:31,400
+live — this is channel 519's real frequency curve, with four modal frequencies
+
+54
+00:03:31,400 --> 00:03:33,980
+automatically picked out and labeled in hertz.
+
+55
+00:03:39,850 --> 00:03:45,290
+Zoom back out to the full picture: a waterfall plot across all 1,034
+
+56
+00:03:45,290 --> 00:03:49,470
+channels, showing exactly where each resonant frequency runs consistently —
+
+57
+00:03:49,470 --> 00:03:50,310
+or doesn't.
+
+58
+00:03:52,850 --> 00:03:56,940
+MurSense isn't limited to running numbers — ask it a domain question directly,
+
+59
+00:03:56,940 --> 00:04:01,040
+like how to read an anomaly in this plot, and it retrieves from
+
+60
+00:04:01,040 --> 00:04:05,130
+its own knowledge base and walks you through an actual diagnostic decision tree.
+
+61
+00:04:10,850 --> 00:04:15,950
+Every answer carries the same footer: which model answered, how many tokens it
+
+62
+00:04:15,950 --> 00:04:19,860
+used, how long it took — and three one-click actions:
+
+63
+00:04:19,860 --> 00:04:21,040
+copy, export, save.
+
+64
+00:04:21,950 --> 00:04:26,690
+Export turns any analysis into a formatted Word report in one click —
+
+65
+00:04:26,690 --> 00:04:31,070
+tables, figures, and all — ready to hand to a bridge owner.
+
+66
+00:04:31,990 --> 00:04:36,840
+Save archives the same analysis into a named project, so nothing gets lost
+
+67
+00:04:36,840 --> 00:04:37,590
+between sessions.
+
+68
+00:04:41,990 --> 00:04:46,040
+That saved report shows up immediately in Projects — title,
+
+69
+00:04:46,040 --> 00:04:50,090
+word count, figure count, health level, all at a glance.
+
+70
+00:04:51,000 --> 00:04:54,170
+Open any archived report and you get a full editor:
+
+71
+00:04:54,170 --> 00:04:57,350
+Markdown on the left, a live preview on the right,
+
+72
+00:04:57,350 --> 00:05:01,470
+and a one-click export to a standalone HTML file you can share with
+
+73
+00:05:01,470 --> 00:05:01,970
+anyone.
+
+74
+00:05:04,000 --> 00:05:08,430
+The Data Space is where the raw material lives: your own uploaded recordings,
+
+75
+00:05:08,430 --> 00:05:12,860
+with a live multi-channel waveform preview you can inspect channel by channel —
+
+76
+00:05:12,860 --> 00:05:17,290
+pick specific channels to compare and adjust their spacing for a clearer view
+
+77
+00:05:17,290 --> 00:05:19,330
+— before ever running an analysis.
+
+78
+00:05:19,330 --> 00:05:24,720
+There's also a shared public demo dataset, and an organization-shared tier gated to
+
+79
+00:05:24,720 --> 00:05:25,550
+enterprise accounts.
+
+80
+00:05:28,000 --> 00:05:32,110
+Click analyze on any file here, and MurSense jumps straight back to the
+
+81
+00:05:32,110 --> 00:05:34,630
+chat with the right prompt already filled in.
+
+82
+00:05:36,000 --> 00:05:40,690
+The account pages round out the basics: profile, real usage statistics,
+
+83
+00:05:40,690 --> 00:05:45,370
+a push-notification setup reserved for the cloud-deployed tier, and password management.
+
+84
+00:05:49,000 --> 00:05:53,700
+System settings let you point MurSense at your own LLM provider and API
+
+85
+00:05:53,700 --> 00:05:58,390
+key, set a preferred reply language, and switch the whole interface's language —
+
+86
+00:05:58,390 --> 00:05:59,840
+all without restarting anything.
+
+87
+00:06:02,000 --> 00:06:05,160
+And a direct feedback channel, straight to the developer.
+
+88
+00:06:08,000 --> 00:06:12,310
+One rule keeps all of this trustworthy: the AI never writes analysis code
+
+89
+00:06:12,310 --> 00:06:16,290
+on the fly, and it never sees the raw waveform data directly.
+
+90
+00:06:16,290 --> 00:06:21,340
+A validated algorithm package does the actual computation; the model only decides which
+
+91
+00:06:21,340 --> 00:06:24,060
+tool to call and explains the result.
+
+92
+00:06:24,060 --> 00:06:29,490
+MurSense: real sensors, real analysis, and an assistant that shows its work.
