@@ -3,7 +3,9 @@
 Live product overview + demo video for **MurSense** (知几), a
 conversational AI agent for DAS bridge structural health monitoring.
 
-**→ https://ymustc.github.io/mursense-showcase/**
+**→ https://mursense.miao-yu.com** (mirror: https://ymustc.github.io/mursense-showcase/)
+
+**Live product demo** (the real product, not just the video): **https://mursense-demo.miao-yu.com**
 
 This is a static GitHub Pages site, not a code repo — it exists
 separately from [mursense-public](https://github.com/ymustc/mursense-public)
@@ -21,8 +23,10 @@ a git history someone might clone to read code.
 
 ## Updating
 
-Pages served directly from `main` — pushing to `main` redeploys the
-site (usually live within a minute or two). The `en/zh/fr.html` files
+The site is dual-hosted: Cloudflare Pages serves the primary domain
+(mursense.miao-yu.com) and GitHub Pages serves the mirror directly
+from `main`. See `DEPLOY.md` for how a change reaches both, and for
+the deployment pitfalls already hit. The `en/zh/fr.html` files
 here are synced from `product-page/` in the private `mursense-upgrade`
 working repo; there's no build step, just a manual copy when that
 source changes.
