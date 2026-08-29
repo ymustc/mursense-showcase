@@ -1,0 +1,14 @@
+# Cloudflare Pages Git integration was created via API (see DEPLOY.md),
+# which wires up builds but not the push webhook. This action closes the
+# gap: every push to main fires the project's deploy hook, so one push
+# updates both GitHub Pages and Cloudflare Pages.
+name: Trigger Cloudflare Pages build
+on:
+  push:
+    branches: [main]
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fire Cloudflare Pages deploy hook
+        run: curl -sf -X POST "${{ secrets.CF_PAGES_DEPLOY_HOOK }}"
