@@ -87,6 +87,14 @@ this machine.
   sees nothing and a naive grep "proves" a deploy failed when it
   didn't. GitHub Pages serves `.html` paths directly. Always `curl -sL`
   when checking this site.
+- **The zone rewrites HTML on the custom domain.** Cloudflare's Email
+  Address Obfuscation turns every `mailto:` into a `data-cfemail`
+  stub (browsers still see a working link), so the custom domain's
+  bytes never match `mursense.pages.dev` or GitHub Pages, and grepping
+  the custom domain for `mailto:` "proves" content is stale when it
+  isn't — that false alarm cost half an hour on 2026-08-29. Grep for
+  surrounding text instead, and run byte-for-byte comparisons against
+  `mursense.pages.dev`, which bypasses zone features.
 
 ## Acceptance checks
 
@@ -104,8 +112,10 @@ done
 openssl s_client -connect mursense.miao-yu.com:443 -servername mursense.miao-yu.com \
   </dev/null 2>/dev/null | openssl x509 -noout -subject -enddate
 
-# Both hosts serve identical content (spot-check the English page)
-diff <(curl -sL https://mursense.miao-yu.com/en.html) \
+# Both hosts serve identical content (spot-check the English page).
+# pages.dev, not the custom domain: zone-level email obfuscation rewrites
+# the custom domain's HTML, so its bytes never match (see pitfalls).
+diff <(curl -sL https://mursense.pages.dev/en.html) \
      <(curl -sL https://ymustc.github.io/mursense-showcase/en.html) && echo "hosts in sync"
 
 # The hero CTA actually links to the live demo, and the demo answers
